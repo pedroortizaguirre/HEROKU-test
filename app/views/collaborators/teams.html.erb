@@ -1,0 +1,27 @@
+<h1>Collaborators#teams</h1>
+<p>Find me in app/views/collaborators/teams.html.erb</p>
+collaborator = Collaborator.all
+
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Collaborators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @collabo.each do |f| %>
+      <tr>
+        <td><%= f.names %></td>
+        <td><%= f.last_names %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
