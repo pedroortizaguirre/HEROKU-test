@@ -34,6 +34,15 @@
             <%= image_tag "https://lh5.googleusercontent.com/-M_DkLkGtAPQ/AAAAAAAAAAI/AAAAAAAABAc/n1iHOaefpiE/photo.jpg", :class=> "img-circle", height:'35', width:'35' %>             
             </a>
             <a href="#" class="btn btn-appMod btn-flat"><i class="fa fa-sign-out" ></i> Logout </a>
+           <!-- Bloque de codigo de Devise para controlar los logins -->
+          <% if user_signed_in? %>
+          Logged in as <strong><%= current_user.email %></strong>.
+          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+          <% else %>
+          <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+          <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+          <% end %>
           </ul>
         </div>
       </nav>
@@ -64,7 +73,7 @@
         <ul class="sidebar-menu">
 
           <li class="SideColor">
-            <a href="HTML%20TEMPLATE.html">
+            <a href="">
               <i class="fa fa-cogs"></i> <span>Admin</span> </i>
             </a>             
           </li>
@@ -77,14 +86,14 @@
               </span>
             </a>
             <li class="SideColor">
-              <a href="Profile.html">
+              <a href="">
                 <i class="fa fa-user"></i>
                 <span>
                   Profile
                 </span>
               </a> 
               <li class="SideColor">
-                <a href="#">
+                <a href="">
                   <i class="fa fa-user"></i>
                   <span>
                     Teams
