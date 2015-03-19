@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'home/dashboard'
   get 'layouts/devise'
 
-  root 'employee#employee'
+  root 'home#dashboard'
    
   #post 'collaborators/search'
 
