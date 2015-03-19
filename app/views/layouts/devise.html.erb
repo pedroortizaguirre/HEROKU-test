@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>MIND GT - Login</title>
-  <%= stylesheet_link_tag 'CSS/LoginStyle', :media => 'screen' %>
-  <%= csrf_meta_tags %>  
+   <%= stylesheet_link_tag 'LoginStyle', :media => 'screen' %>
+  
+ <%= csrf_meta_tags %>  
 </head>
 
 <body>
@@ -13,8 +14,9 @@
 <img src="http://mindhub.mx/wp-content/uploads/2014/11/mindWhite.png" />
 <div id="login">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  
   <div class="field"><span class="fontawesome-user"></span>
-    <%= f.email_field :email, :id => 'email', :value => 'email', :onBlur => "if(this.value == '') this.value = 'email'", :onFocus => "if(this.value == 'email') this.value = ''"  %>
+    <%= f.email_field :email,  :value => 'email', :onBlur => "if(this.value == '') this.value = 'email'", :onFocus => "if(this.value == 'email') this.value = ''"  %>
   </div>
 
   <div class="field"> <span class="fontawesome-lock"></span>
