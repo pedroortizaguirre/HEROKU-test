@@ -17,5 +17,4 @@
 //= require dashboard
 //= require dashboard2
 //= require demo
-//= require turbolinks
 //= require_tree .
