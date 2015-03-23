@@ -206,13 +206,13 @@
 											</div>
 
 <% unless @search.blank? %> 
-
-								<%= @search.names %>
-								<%= @search.last_names %>
-								<%= @search.id %>
-
-								<% else %>
-								lel
+<b>Search Result: </b>
+								<p>
+								<b>Name: </b><%= @search.names %>
+								<br><b>Last Names: </b><%= @search.last_names %>
+								<br><b>ID: </b> <%= @search.id %>
+</p>
+								
 								<% end %>
 
 
