@@ -4211,7 +4211,11 @@ td.AccountName
 {
   width: 120px;
 }
+.SideColor
+{ 
+  text-shadow:2px 3px 4px #575757;
 
+}
 td.Profile
 {
   width:auto;
