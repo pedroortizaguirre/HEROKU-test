@@ -12,6 +12,10 @@ Rails.application.config.assets.precompile += %w( dashboard.js )
 Rails.application.config.assets.precompile += %w( dashboard2.js )
 Rails.application.config.assets.precompile += %w( demo.js )
 Rails.application.config.assets.precompile += %w( app.js )
+Rails.application.config.assets.precompile += %w( jquery.slimScroll.min.js )
+Rails.application.config.assets.precompile += %w( fastclick.min.js )
+Rails.application.config.assets.precompile += %w( app.min.js )
+Rails.application.config.assets.precompile += %w( jQuery-2.1.3.min.js )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 
