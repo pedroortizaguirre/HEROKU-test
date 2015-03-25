@@ -5,9 +5,9 @@
    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag 'CSS/bootstrap', :media => 'screen'%>
-  <%= stylesheet_link_tag 'CSS/AdminLTE', :media => 'screen'%>    
-  <%= stylesheet_link_tag 'CSS/skin-Mind', :media => 'screen'%> 
+  <%= stylesheet_link_tag 'bootstrap', :media => 'screen'%>
+  <%= stylesheet_link_tag 'AdminLTE', :media => 'screen'%>    
+  <%= stylesheet_link_tag 'skin-Mind', :media => 'screen'%> 
     
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
@@ -73,13 +73,13 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
 
-          <li class="SideColor">
+          <li >
             <a href="">
               <i class="fa fa-cogs"></i> <span>Admin</span> </i>
             </a>             
           </li>
 
-          <li class="SideColor">
+          <li >
             <a href="/collaborators/single">
               <i class="fa fa-user"></i>
               <span>
@@ -87,7 +87,7 @@
               </span>
             </a>
             </li>
-            <li class="SideColor">
+            <li >
               <a href="/employee/employee">
                 <i class="fa fa-user"></i>
                 <span>
@@ -95,7 +95,7 @@
                 </span>
               </a> 
               </li>
-              <li class="SideColor">
+              <li >
 <%= link_to ("<i class='fa fa-user'></i> Link").html_safe %>
                 <a href="/team/teamview">
                   <i class="fa fa-user"></i>
